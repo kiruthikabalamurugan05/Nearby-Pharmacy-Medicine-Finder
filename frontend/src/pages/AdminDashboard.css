@@ -1,0 +1,593 @@
+* {
+  box-sizing: border-box;
+}
+
+.admin-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* ================= NAVBAR ================= */
+
+.admin-navbar {
+  height: 72px;
+  padding: 0 6%;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-logo {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #16a34a;
+  color: white;
+
+  border-radius: 10px;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.admin-brand strong {
+  display: block;
+  font-size: 16px;
+}
+
+.admin-brand span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 11px;
+  color: #64748b;
+}
+
+.admin-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-name {
+  font-size: 14px;
+  color: #475569;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 15px;
+
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+
+  background: #fff;
+
+  color: #dc2626;
+
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #fef2f2;
+}
+
+/* ================= MAIN ================= */
+
+.admin-main {
+  width: 90%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 45px 0;
+}
+
+/* ================= HEADING ================= */
+
+.admin-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.admin-label {
+  margin: 0 0 8px;
+
+  color: #16a34a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.admin-heading h1 {
+  margin: 0 0 7px;
+
+  font-size: 34px;
+}
+
+.admin-heading p:last-child {
+  margin: 0;
+
+  color: #64748b;
+}
+
+.refresh-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 10px 17px;
+
+  background: white;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  color: #334155;
+}
+
+.refresh-button:hover {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
+/* ================= MESSAGE ================= */
+
+.admin-message {
+  padding: 13px 16px;
+
+  margin-bottom: 25px;
+
+  border-radius: 9px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
+
+  color: #15803d;
+
+  font-size: 14px;
+}
+
+/* ================= STATS ================= */
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon.customers {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.stat-icon.pharmacies {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.stat-icon.approved {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.stat-icon.pending {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.stat-card span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  margin-bottom: 5px;
+}
+
+.stat-card strong {
+  font-size: 25px;
+}
+
+/* ================= REQUESTS ================= */
+
+.requests-section {
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+}
+
+.section-header {
+  padding: 24px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.section-header h2 {
+  margin: 0 0 6px;
+
+  font-size: 20px;
+}
+
+.section-header p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.pending-count {
+  padding: 8px 13px;
+
+  border-radius: 20px;
+
+  background: #fff7ed;
+
+  color: #c2410c;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+/* ================= PHARMACY REQUEST ================= */
+
+.pharmacy-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.pharmacy-request {
+  padding: 25px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.pharmacy-request:last-child {
+  border-bottom: none;
+}
+
+.pharmacy-info {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 17px;
+}
+
+.pharmacy-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #ecfdf5;
+
+  color: #16a34a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pharmacy-info h3 {
+  margin: 0 0 8px;
+
+  font-size: 17px;
+}
+
+.pharmacy-info p {
+  margin: 3px 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+/* ================= ACTIONS ================= */
+
+.pharmacy-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+.pending-badge {
+  padding: 7px 11px;
+
+  background: #fff7ed;
+
+  color: #c2410c;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.approve-button,
+.reject-button {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 9px 13px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.approve-button {
+  border: 1px solid #bbf7d0;
+
+  background: #f0fdf4;
+
+  color: #15803d;
+}
+
+.approve-button:hover {
+  background: #dcfce7;
+}
+
+.reject-button {
+  border: 1px solid #fecaca;
+
+  background: #fef2f2;
+
+  color: #dc2626;
+}
+
+.reject-button:hover {
+  background: #fee2e2;
+}
+
+/* ================= EMPTY ================= */
+
+.empty-state {
+  padding: 65px 20px;
+
+  text-align: center;
+
+  color: #64748b;
+}
+
+.empty-state svg {
+  color: #16a34a;
+}
+
+.empty-state h3 {
+  margin: 15px 0 5px;
+
+  color: #334155;
+}
+
+.empty-state p {
+  margin: 0;
+
+  font-size: 13px;
+}
+
+/* ================= SECURITY ================= */
+
+.admin-security {
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+.admin-security svg {
+  color: #16a34a;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .stats-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .pharmacy-request {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pharmacy-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .admin-navbar {
+    padding: 0 20px;
+  }
+
+  .admin-name {
+    display: none;
+  }
+
+  .admin-main {
+    width: 92%;
+    padding: 30px 0;
+  }
+
+  .admin-heading {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .admin-heading h1 {
+    font-size: 28px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    padding: 20px;
+  }
+
+  .pharmacy-request {
+    padding: 20px;
+  }
+
+}
+
+.license-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.license-label {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.license-button {
+  text-decoration: none;
+  color: #16a34a;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.license-button:hover {
+  text-decoration: underline;
+}
+
+.license-preview {
+  margin-top: 18px;
+  width: 100%;
+}
+
+.license-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.license-frame {
+  width: 100%;
+  height: 450px;
+  border: 1px solid #dbe3ec;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.view-license-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #16a34a;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.view-license-link:hover {
+  text-decoration: underline;
+}

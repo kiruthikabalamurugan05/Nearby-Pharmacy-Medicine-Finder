@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+.register-page {
+  min-height: 100vh;
+  background: #f5f9f8;
+  color: #102f5e;
+}
+
+/* NAVBAR */
+
+.register-navbar {
+  height: 70px;
+  background: white;
+  border-bottom: 1px solid #e4ebe8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #08a98c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.brand strong {
+  color: #08a98c;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links button {
+  border: none;
+  background: transparent;
+  color: #102f5e;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.login-nav-btn {
+  border: 1px solid #1685e5 !important;
+  border-radius: 20px !important;
+  padding: 9px 20px !important;
+  color: #1685e5 !important;
+}
+
+/* CENTER */
+
+.register-main {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px;
+}
+
+/* CARD */
+
+.register-card {
+  width: 500px;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #e1e9e6;
+  border-radius: 20px;
+  padding: 30px 38px;
+  box-shadow: 0 10px 35px rgba(25, 70, 60, 0.08);
+}
+
+.register-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #e4f8f2;
+  color: #08ad89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 12px;
+}
+
+.register-card h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 25px;
+}
+
+/* ROLE */
+
+.role-section {
+  margin-bottom: 17px;
+}
+
+.role-section label,
+.input-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.role-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.role-btn {
+  height: 50px;
+  border: 1px solid #d9e4e1;
+  border-radius: 9px;
+  background: white;
+  color: #123661;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.role-btn svg {
+  color: #087fce;
+}
+
+.role-btn.selected {
+  border-color: #08b68c;
+  background: #effbf7;
+  color: #08a47e;
+}
+
+.role-btn.selected svg {
+  color: #08a47e;
+}
+
+/* INPUT */
+
+.input-group {
+  margin-bottom: 14px;
+}
+
+.input-wrapper {
+  height: 43px;
+  border: 1px solid #d7e2df;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 9px;
+}
+
+.input-wrapper:focus-within {
+  border-color: #08ad89;
+  box-shadow: 0 0 0 2px rgba(8, 173, 137, 0.08);
+}
+
+.input-wrapper svg {
+  color: #08ad89;
+  flex-shrink: 0;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #18375d;
+}
+
+.input-wrapper input::placeholder {
+  color: #91a09b;
+}
+
+.password-toggle {
+  border: none;
+  background: transparent;
+  color: #7d8e89;
+  cursor: pointer;
+  display: flex;
+}
+
+.file-input {
+  padding-right: 10px;
+}
+
+.file-input input {
+  padding-top: 12px;
+  font-size: 11px;
+}
+
+.input-group small {
+  display: block;
+  margin-top: 5px;
+  color: #899690;
+  font-size: 9px;
+}
+
+/* MESSAGES */
+
+.success-message {
+  background: #eafaf4;
+  color: #087d5c;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+.error-message {
+  background: #fff0f0;
+  color: #c03939;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+/* BUTTON */
+
+.create-account-btn {
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #08b58a, #078be1);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.create-account-btn:hover {
+  opacity: 0.93;
+}
+
+.create-account-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* LOGIN */
+
+.login-text {
+  text-align: center;
+  font-size: 11px;
+  color: #84918d;
+  margin: 17px 0 0;
+}
+
+.login-text button {
+  border: none;
+  background: transparent;
+  color: #078be1;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .register-navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links button:not(.login-nav-btn) {
+    display: none;
+  }
+
+  .register-main {
+    padding: 20px 15px;
+  }
+
+  .register-card {
+    padding: 25px 20px;
+  }
+}

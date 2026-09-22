@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+.customer-dashboard {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+/* NAVBAR */
+
+.customer-navbar {
+  height: 68px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+.customer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.brand-logo {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2563eb;
+  color: white;
+
+  border-radius: 7px;
+
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.customer-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.customer-name {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  border: 1px solid #d1d5db;
+  background: white;
+
+  padding: 8px 13px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-size: 13px;
+
+  color: #374151;
+}
+
+.logout-btn:hover {
+  background: #f3f4f6;
+}
+
+
+/* MAIN */
+
+.customer-main {
+  max-width: 900px;
+  margin: 0 auto;
+
+  padding: 90px 25px;
+}
+
+
+/* WELCOME */
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.welcome-section h1 {
+  margin: 0 0 10px;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.welcome-section p {
+  margin: 0;
+
+  font-size: 15px;
+  color: #6b7280;
+}
+
+
+/* SEARCH */
+
+.medicine-search {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  background: white;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 16px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.medicine-search svg {
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.medicine-search input {
+  flex: 1;
+
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  padding: 0 14px;
+
+  font-size: 14px;
+
+  color: #111827;
+}
+
+.medicine-search input::placeholder {
+  color: #9ca3af;
+}
+
+.medicine-search button {
+  height: 40px;
+
+  margin-right: 7px;
+
+  padding: 0 18px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.medicine-search button:hover {
+  background: #1d4ed8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .customer-navbar {
+    padding: 0 18px;
+  }
+
+  .customer-brand span {
+    font-size: 14px;
+  }
+
+  .customer-name {
+    display: none;
+  }
+
+  .customer-main {
+    padding: 70px 18px;
+  }
+
+  .welcome-section h1 {
+    font-size: 24px;
+  }
+
+  .medicine-search {
+    height: 50px;
+  }
+
+  .medicine-search button {
+    padding: 0 13px;
+  }
+}
